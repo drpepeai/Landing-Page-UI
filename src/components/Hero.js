@@ -185,6 +185,18 @@ const Hero = () => {
       <div className="landing-cta-container">
 
 
+      <div className="socials-ambassador-docs-container">
+                <div className="footer-socials-container">
+                  <div onClick={openTelegramLink}  className="footer-link-text ">﹝Join The Community﹞</div>
+
+                  <div onClick={openXLink} className="footer-link-text">﹝X @drpepeai﹞</div>
+                </div>
+
+                <div className="footer-ambassador-docs-container">
+                        <div onClick={openAmbassadorLink} className="footer-link-text">﹝Become an Ambassador﹞</div>
+                        <div onClick={openDocsLink} className="footer-link-text">﹝Docs﹞</div>
+                </div>
+        </div>
 
 
         <div  className="footer-ca-solana-container">
@@ -198,18 +210,6 @@ const Hero = () => {
           <div>CA: BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk</div>
         </div>
 
-        <div className="socials-ambassador-docs-container">
-                <div className="footer-socials-container">
-                  <div onClick={openTelegramLink}  className="footer-link-text ">﹝Join The Community﹞</div>
-
-                  <div onClick={openXLink} className="footer-link-text">﹝X @drpepeai﹞</div>
-                </div>
-
-                <div className="footer-ambassador-docs-container">
-                        <div onClick={openAmbassadorLink} className="footer-link-text">﹝Become an Ambassador﹞</div>
-                        <div onClick={openDocsLink} className="footer-link-text">﹝Docs﹞</div>
-                </div>
-        </div>
 
 
 
