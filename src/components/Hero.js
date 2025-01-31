@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { Link, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import { gsap } from 'gsap';
 
 import "./hero.css";

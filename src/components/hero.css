@@ -72,6 +72,7 @@
     color: #D1D1D1;
     letter-spacing: 2px;
     font-family: 'Cascadia Code',monospace;
+
   }
   .overlay-text-subtitle-one {
     position: relative;
@@ -95,6 +96,7 @@
       flex-direction: row;
       align-items: center;
       margin-bottom: 2rem;
+      cursor: pointer;
 
   }
   .animal-text{
