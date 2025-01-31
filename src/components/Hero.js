@@ -161,9 +161,9 @@ const Hero = () => {
               <div className="agents-container">
 
                 <div className="square-arrow-text-container">
-                <Link to="/openai-chat" onClick={handleNavigate}>
-                  <div className="overlay-text-subtitle-three">Human Agent v.0 1</div>
-                </Link>
+
+                  <div onClick={openTelegramLink} className="overlay-text-subtitle-three">Human Agent v.0 1</div>
+          
                   <img src={squarearrow} alt="squarearrow" className="squarearrow" />
                 </div>
 
