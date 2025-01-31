@@ -154,7 +154,7 @@ const Hero = () => {
               </div>
 
               <div className="overlay-text-subtitle-one">
-              An AI agent designed to you live forever
+              An AI agent designed to help you live forever
               </div>
 
 
@@ -233,7 +233,7 @@ const Hero = () => {
             </div>
 
             <div className="mobile-subtitle">
-            An AI agent designed to you live forever
+            An AI agent designed to help you live forever
             </div>
             
           </div>
