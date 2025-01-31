@@ -8,6 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Hero />} />
+
         <Route path="/typewriter-effect" element={<TypewriterEffect />} />
       </Routes>
     </Router>
