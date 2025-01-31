@@ -20,6 +20,34 @@ const Hero = () => {
   const navigate = useNavigate();
 
 
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  const openTelegramLink = () => {
+    const mobileLink = 'tg://resolve?domain=drpepeaiOFFICIAL'; 
+    const webLink = 'tg://resolve?domain=drpepeaiOFFICIAL'; 
+
+    if (isMobile) {
+      window.location.href = mobileLink;
+    } else {
+      window.open(webLink, '_blank', 'noopener noreferrer');
+    }
+  };
+
+  const openXLink = () => {
+    const webLink = 'https://x.com/drpepeai'; 
+    window.open(webLink, '_blank', 'noopener noreferrer');
+  };
+
+  const openAmbassadorLink = () => {
+    const webLink = 'https://drpepe.typeform.com/EternalsProgram'; 
+    window.open(webLink, '_blank', 'noopener noreferrer');
+  };
+
+  const openDocsLink = () => {
+    const webLink = 'https://docs.drpepe.ai/';
+    window.open(webLink, '_blank', 'noopener noreferrer');
+
+  }
 
   useEffect(() => {
 
@@ -156,14 +184,14 @@ const Hero = () => {
 
         <div className="socials-ambassador-docs-container">
                 <div className="footer-socials-container">
-                  <div  className="footer-link-text ">﹝Join Telegram﹞</div>
+                  <div onClick={openTelegramLink}  className="footer-link-text ">﹝Join Telegram﹞</div>
 
-                  <div className="footer-link-text">﹝X @drpepeai﹞</div>
+                  <div onClick={openXLink} className="footer-link-text">﹝X @drpepeai﹞</div>
                 </div>
 
                 <div className="footer-ambassador-docs-container">
-                        <div className="footer-link-text">﹝Become an Ambassador﹞</div>
-                        <div className="footer-link-text">﹝Docs﹞</div>
+                        <div onClick={openAmbassadorLink} className="footer-link-text">﹝Become an Ambassador﹞</div>
+                        <div onClick={openDocsLink} className="footer-link-text">﹝Docs﹞</div>
                 </div>
         </div>
 
