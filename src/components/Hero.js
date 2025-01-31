@@ -49,6 +49,11 @@ const Hero = () => {
 
   }
 
+  const openJupiter = () => {
+    const webLink ='https://jup.ag/tokens/BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk'
+    window.open(webLink, '_blank', 'noopener noreferrer');
+  }
+
   useEffect(() => {
 
 
@@ -182,9 +187,20 @@ const Hero = () => {
 
 
 
+        <div  className="footer-ca-solana-container">
+          <div className="solana-logo-buy-container">
+
+            <img src={solanalogo_circle} alt="solana logo" height={22} />
+            <div  onClick={openJupiter} className="footer-link-text">Buy on Solana</div>
+
+          </div>
+
+          <div>CA: BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk</div>
+        </div>
+
         <div className="socials-ambassador-docs-container">
                 <div className="footer-socials-container">
-                  <div onClick={openTelegramLink}  className="footer-link-text ">﹝Join Telegram﹞</div>
+                  <div onClick={openTelegramLink}  className="footer-link-text ">﹝Join The Community﹞</div>
 
                   <div onClick={openXLink} className="footer-link-text">﹝X @drpepeai﹞</div>
                 </div>
@@ -196,17 +212,6 @@ const Hero = () => {
         </div>
 
 
-
-        <div  className="footer-ca-solana-container">
-          <div className="solana-logo-buy-container">
-
-            <img src={solanalogo_circle} alt="solana logo" height={22} />
-            <div className="">Buy on Solana</div>
-
-          </div>
-
-          <div>CA: BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk</div>
-        </div>
 
 
       </div>
@@ -242,7 +247,7 @@ const Hero = () => {
           <div className="agents-container">
 
             <div className="mobile-agent-text-arrow-container">
-              <div className="agent-text-mobile">Human Agent v.0 1</div>
+              <div  onClick={openTelegramLink} className="agent-text-mobile">Human Agent v.0 1</div>
               <img src={squarearrow} alt="squarearrow" className="" width={10} />
               ↗
             </div>
@@ -269,10 +274,10 @@ const Hero = () => {
       <div className="landing-cta-mobile-container">
 
       <div className="cta-container-mobile-first">
-            <div  className="text-cta-mobile parenthesis-text">﹝Buy on Solana﹞</div>
-            <div  className="text-cta-mobile parenthesis-text">﹝Follow on X @drpepeai﹞</div>
-            <div className="text-cta-mobile parenthesis-text">﹝Join Telegram﹞</div>
-            <div  className="text-cta-mobile parenthesis-text">﹝Become an Ambassador﹞</div>
+            <div  onClick={openJupiter}  className="text-cta-mobile parenthesis-text">﹝Buy on Solana﹞</div>
+            <div  onClick={openXLink}  className="text-cta-mobile parenthesis-text">﹝Follow on X @drpepeai﹞</div>
+            <div onClick={openTelegramLink} className="text-cta-mobile parenthesis-text">﹝Join Telegram﹞</div>
+            <div  onClick={openAmbassadorLink}  className="text-cta-mobile parenthesis-text">﹝Become an Ambassador﹞</div>
       </div>
 
 
@@ -281,7 +286,7 @@ const Hero = () => {
         <div  className="text-cta-mobile ca-mobile">CA:BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk</div>
       </div>
 
-      <div  className="text-cta-mobile cta-docs-mobile">﹝Docs﹞</div>
+      <div  onClick={openDocsLink} className="text-cta-mobile cta-docs-mobile">﹝Docs﹞</div>
       </div>
 
     </div>
