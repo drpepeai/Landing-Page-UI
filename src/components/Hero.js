@@ -1,6 +1,6 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import {  useNavigate } from 'react-router-dom';
-import { gsap } from 'gsap';
+
 
 import "./hero.css";
 import capsulepepe_gif from "../assets/capsulepepe_gif.gif";
@@ -54,10 +54,31 @@ const Hero = () => {
     window.open(webLink, '_blank', 'noopener noreferrer');
   }
 
+  const fullCA = "BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk";
+  const [contractAddress, setContractAddress] = useState(fullCA);
+
+  const truncateAddress = () => {
+    const width = window.innerWidth;
+    
+    if (width < 1200) {
+      setContractAddress(fullCA.slice(0, 6) + "..." + fullCA.slice(-4)); // Shortest truncation
+    } else if (width < 1300) {
+      setContractAddress(fullCA.slice(0, 10) + "..." + fullCA.slice(-6)); // Medium truncation
+    } else if (width < 1400) {
+      setContractAddress(fullCA.slice(0, 14) + "..." + fullCA.slice(-8)); // Longer truncation
+    } else {
+      setContractAddress(fullCA); // Full address on larger screens
+    }
+  };
+
   useEffect(() => {
 
 
     const gridItems = gridRef.current.querySelectorAll(".grid-item");
+
+    truncateAddress(); // Initial check
+    window.addEventListener("resize", truncateAddress);
+    
 
     // Elastic grid animation
     const handleMouseMove = (e) => {
@@ -92,22 +113,14 @@ const Hero = () => {
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
       document.removeEventListener("mouseleave", handleMouseLeave);
+      window.removeEventListener("resize", truncateAddress);
+
     
     };
   }, []);
 
-  const handleNavigate = (e) => {
-    e.preventDefault(); // Prevent the default navigation behavior of <Link>
 
-    // Create a fade-out animation for the entire container
-    gsap.to(".container", {
-      opacity: 0,
-      duration: 0.8,
-      onComplete: () => {
-        navigate("/openai-chat"); // Trigger navigation after the animation completes
-      },
-    });
-  };
+
 
 
 
@@ -185,7 +198,15 @@ const Hero = () => {
       <div className="landing-cta-container">
 
                
-                <div onClick={openJupiter} className="footer-link-text solana-ca-container"> <span> <img src={solanalogo_circle} alt="solana logo" height={16} /> <span>BUY ON SOLANA</span> </span>CA: BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk</div>
+                  <div className="footer-link-text solana-ca-container">
+                    <span>
+                      <img src={solanalogo_circle} alt="solana logo" height={12} style={{ marginRight: "8px" }} /> 
+                  
+                      <span style={{ fontSize: "16px" }}>BUY ON SOLANA</span>
+                    </span>
+                      CA: {contractAddress}
+                  </div>
+
                 <div onClick={openTelegramLink}  className="footer-link-text ">﹝Join The Community﹞</div>
                 <div onClick={openXLink} className="footer-link-text">﹝X @drpepeai﹞</div>
                 <div onClick={openAmbassadorLink} className="footer-link-text">﹝Become an Ambassador﹞</div>

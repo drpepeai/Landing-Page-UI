@@ -132,8 +132,6 @@
     color: inherit; 
   }
 
-
-  
   /* footer */
   .landing-cta-container{
       position: absolute;
@@ -152,8 +150,6 @@
       padding: 0 5% 0 5%;
   
   }
-
-
   .footer-link-text {
     position: relative;
     display: inline-block; /* Ensure the text is inline-block for the pseudo-element to align correctly */
@@ -185,8 +181,6 @@
     align-items: start;
     justify-content: center;
   }
-
-
 
 
   /* Positioning L's in each corner */
@@ -230,29 +224,13 @@
     .landing-cta-container{
       align-items: end;
     }
-.solana-link{
-  display: none;
-}
-    
-  }
-
-  @media (width <= 1382px) {
-
-  
-  }
-
-  @media (width <= 1250px){
-
- 
-    .footer-link-text {
-      margin-top: 3rem;
-
-    }
 
   }
 
 
-  @media (width <= 840px) {
+
+
+  @media (width <= 1000px) {
   /* hides */
 
     .landing-cta-container{
