@@ -13,7 +13,7 @@ import l_top_left from "../assets/l_top_left.svg";
 import drpepeai_title from "../assets/drpepea_title_vipnagorgialla.svg";
 import TypewriterEffect from "./TypewriterEffect";
 import drpepelogowired from "../assets/drpepelogo-wired.svg";
-import solanalogo_circle from "../assets/solanalogo_circle.svg"
+import solanalogo_circle from "../assets/solana-logo-s.svg"
 
 const Hero = () => {
   const gridRef = useRef(null);
@@ -184,35 +184,12 @@ const Hero = () => {
       {/* Bottom desktop */}
       <div className="landing-cta-container">
 
-
-      <div className="socials-ambassador-docs-container">
-                <div className="footer-socials-container">
-                  <div onClick={openTelegramLink}  className="footer-link-text ">﹝Join The Community﹞</div>
-
-                  <div onClick={openXLink} className="footer-link-text">﹝X @drpepeai﹞</div>
-                </div>
-
-                <div className="footer-ambassador-docs-container">
-                        <div onClick={openAmbassadorLink} className="footer-link-text">﹝Become an Ambassador﹞</div>
-                        <div onClick={openDocsLink} className="footer-link-text">﹝Docs﹞</div>
-                </div>
-        </div>
-
-
-        <div  className="footer-ca-solana-container">
-          <div className="solana-logo-buy-container">
-
-            <img src={solanalogo_circle} alt="solana logo" height={22} />
-            <div  onClick={openJupiter} className="footer-link-text">Buy on Solana</div>
-
-          </div>
-
-          <div>CA: BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk</div>
-        </div>
-
-
-
-
+               
+                <div onClick={openJupiter} className="footer-link-text solana-ca-container"> <span> <img src={solanalogo_circle} alt="solana logo" height={16} /> <span>BUY ON SOLANA</span> </span>CA: BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk</div>
+                <div onClick={openTelegramLink}  className="footer-link-text ">﹝Join The Community﹞</div>
+                <div onClick={openXLink} className="footer-link-text">﹝X @drpepeai﹞</div>
+                <div onClick={openAmbassadorLink} className="footer-link-text">﹝Become an Ambassador﹞</div>
+                <div onClick={openDocsLink} className="footer-link-text">﹝Docs﹞</div>
 
       </div>
 
