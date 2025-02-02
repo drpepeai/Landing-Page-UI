@@ -344,10 +344,13 @@
       font-family: 'Cascadia Code',monospace;
       padding-bottom: 5%;
       font-size: 1.8vh;
+
       
     }
     .parenthesis-text{
       margin-left: -4px;
+
+
     }
     .ca-container-mobile{
       width: 58%;
@@ -363,6 +366,8 @@
       flex-direction: column;
       align-items: end;
       padding-right: 1rem;
+      z-index: 1000;
+
     }
 
 

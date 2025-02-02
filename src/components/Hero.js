@@ -284,7 +284,7 @@ const Hero = () => {
         <div  className="text-cta-mobile ca-mobile">CA:BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk</div>
       </div>
 
-      <div  onClick={openDocsLink} className="text-cta-mobile cta-docs-mobile">﹝Docs﹞</div>
+      <div  onClick={openDocsLink} className="text-cta-mobile cta-docs-mobile ">﹝Docs﹞</div>
       </div>
 
     </div>
