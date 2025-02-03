@@ -198,7 +198,7 @@ const Hero = () => {
       <div className="landing-cta-container">
 
                
-                  <div className="footer-link-text solana-ca-container">
+                  <div onClick={openJupiter} className="footer-link-text solana-ca-container">
                     <span>
                       <img src={solanalogo_circle} alt="solana logo" height={12} style={{ marginRight: "8px" }} /> 
                   
