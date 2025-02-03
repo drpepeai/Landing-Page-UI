@@ -54,6 +54,15 @@ const Hero = () => {
     window.open(webLink, '_blank', 'noopener noreferrer');
   }
 
+  const openHumanAgent = () => {
+    const webLink ='https://agent.drpepe.ai/'
+    window.open(webLink,'noopener noreferrer');
+  }
+
+
+
+
+
   const fullCA = "BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk";
   const [contractAddress, setContractAddress] = useState(fullCA);
 
@@ -175,7 +184,7 @@ const Hero = () => {
 
                 <div className="square-arrow-text-container">
 
-                  <div onClick={openTelegramLink} className="overlay-text-subtitle-three">Human Agent v.0 1</div>
+                  <div onClick={openHumanAgent} className="overlay-text-subtitle-three human-agent-link">Human Agent v.0 1</div>
           
                   <img src={squarearrow} alt="squarearrow" className="squarearrow" />
                 </div>
