@@ -254,7 +254,7 @@ const Hero = () => {
           <div className="agents-container">
 
             <div className="mobile-agent-text-arrow-container">
-              <div  onClick={openTelegramLink} className="agent-text-mobile">Human Agent v.0 1</div>
+              <div  onClick={openHumanAgent} className="agent-text-mobile">Human Agent v.0 1</div>
               <img src={squarearrow} alt="squarearrow" className="" width={10} />
               ↗
             </div>
