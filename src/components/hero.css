@@ -272,8 +272,8 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      padding-top: 3%;
-      padding-right: 5%;
+      padding-top: 4%;
+      padding-right: 3%;
     }
     .mobile-title-subtitle-container{
       width: 100%;
