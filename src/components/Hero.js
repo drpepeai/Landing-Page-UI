@@ -264,8 +264,8 @@ const Hero = () => {
             </div>
 
             <div className="mobile-agent-text-arrow-container">
-              <div className="agent-text-mobile animal-text-mobile">Dog Agent v.0 1</div>
-              <img src={squarearrowgrey} alt="squarearrow" className="" width={10} />
+              <div onClick={openDogAgent} className="agent-text-mobile agent-text-mobile">Dog Agent v.0 1</div>
+              <img src={squarearrow} alt="squarearrow" className="" width={10} />
               ↗
             </div>
 
