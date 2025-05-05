@@ -58,6 +58,10 @@ const Hero = () => {
     const webLink ='https://agent.drpepe.ai/'
     window.open(webLink,'noopener noreferrer');
   }
+  const openDogAgent = () => {
+    const webLink ='https://www.doglife.ai/'
+    window.open(webLink,'noopener noreferrer');
+  }
 
 
 
@@ -190,8 +194,8 @@ const Hero = () => {
                 </div>
 
                 <div className="square-arrow-text-container">
-                  <div className="overlay-text-subtitle-three animal-text">Dog Agent v.0 1</div>
-                  <img src={squarearrowgrey} alt="squarearrow" className="squarearrow animal-arrow" />
+                  <div onClick={openDogAgent} className="overlay-text-subtitle-three dog-agent-link">Dog Agent v.0 1</div>
+                  <img src={squarearrow} alt="squarearrow" className="squarearrow animal-arrow" />
                 </div>
 
                 <div className="square-arrow-text-container">

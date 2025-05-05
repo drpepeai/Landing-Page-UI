@@ -101,9 +101,11 @@
       cursor: crosshair;
 
   }
-  .human-agent-link:hover{
+  .human-agent-link:hover,
+  .dog-agent-link:hover{
     color: white ;
   }
+
   .animal-text{
     color: #d1d1d180 !important;
     border-bottom: 1px solid #d1d1d180 !important;
